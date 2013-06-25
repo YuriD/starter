@@ -27,7 +27,8 @@ app.use(express.errorHandler({dumpExceptions: true }));
 
 // REST controller mappings
 // TODO: add YOUR stuff here
-app.get('/data/:id/stuff', controller.getStuff);
+//app.get('/data/:id/stuff', controller.getStuff);
+app.get('/data/stuff', controller.getData);
 
 app.listen(port);
 console.log('Express listening on port ' + port);
